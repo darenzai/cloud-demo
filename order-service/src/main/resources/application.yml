@@ -6,12 +6,21 @@ spring:
     username: root
     password: darenzai
     driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: orderservice
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
 mybatis:
   type-aliases-package: com.darenzai.user.pojo
   configuration:
     map-underscore-to-camel-case: true
 logging:
   level:
-    com.xn2001: debug
+    com.darenzai: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:10086/eureka

@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3206/cloud_order?useSSL=false
+    username: root
+    password: darenzai
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  type-aliases-package: com.darenzai.user.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.xn2001: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS

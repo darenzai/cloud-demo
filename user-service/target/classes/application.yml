@@ -11,6 +11,8 @@ spring:
   cloud:
     nacos:
       server-addr: 127.0.0.1:8848
+      discovery:
+        cluster-name: HZ
 mybatis:
   type-aliases-package: com.darenzai.user.pojo
   configuration:

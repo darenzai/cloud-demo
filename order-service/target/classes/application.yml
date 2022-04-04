@@ -23,4 +23,13 @@ logging:
 #eureka:
 #  client:
 #    service-url:
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: BASIC
+  httpclient:
+    enabled: true
+    max-connections: 50
+    max-connections-per-route: 10
 #      defaultZone: http://127.0.0.1:10086/eureka
